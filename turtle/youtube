@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+import math
+import turtle
+turtle.shape ("turtle")
+
+for n in range(3, 10):
+    turtle.left(90 + 180/n)
+    for m in range(n):
+        r = -30 + 20 * n
+        turtle.forward((2 * r * r * (1 - math.cos(2*math.pi/n)))**0.5)
+        turtle.left(360/n)
+
+    turtle.right(90 + 180/n)
+
+    turtle.penup()
+    
+    turtle.forward(20)
+    turtle.pendown()
+
+    
