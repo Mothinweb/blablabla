@@ -1,4 +1,10 @@
 #!/usr/bin/python3
 
+import random 
+a = ["A", "T", "G", "C"]
+dna =[]
 
-
+for i in range (10):
+    nuc = random.choice(a)
+    dna.append(nuc)
+print(dna)
