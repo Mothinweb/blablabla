@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+from random import randint
+from sys import stdin
+a = list(map(int, input().split()))
+a.reverse()
+print(a)
+
